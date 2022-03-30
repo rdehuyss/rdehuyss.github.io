@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://events.ventory.io/get-started/</loc>
+    <lastmod>2020-08-27T11:12:23+02:00</lastmod>
+  </url><url>
+    <loc>https://events.ventory.io/products/</loc>
+    <lastmod>2020-08-27T11:12:23+02:00</lastmod>
+  </url><url>
+    <loc>https://events.ventory.io/blog/</loc>
+    <lastmod>2020-08-27T11:12:23+02:00</lastmod>
+  </url><url>
+    <loc>https://events.ventory.io/</loc>
+    <lastmod>2020-08-27T11:12:23+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url><url>
+    <loc>https://events.ventory.io/blog/webinars/healthcare-medical-devices/</loc>
+    <lastmod>2020-08-27T11:12:23+02:00</lastmod>
+  </url><url>
+    <loc>https://events.ventory.io/categories/</loc>
+  </url><url>
+    <loc>https://events.ventory.io/tags/</loc>
+  </url>
+</urlset>

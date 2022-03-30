@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://events.ventory.io/get-started/" />
+
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ventory</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.1236a506f310597e2967f573f12585de0aa71b2c4febf3915d1ba25473919bc5.css" integrity="sha256-EjalBvMQWX4pZ/Vz8SWF3gqnGyxP6/ORXRuiVHORm8U=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/logo-ventory.png" alt="" width="240" height="52">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Products
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="https://ventory.io/product/#93a3a3b" class="navbar-item">
+                Ventory Web
+              </a>
+              <a href="https://ventory.io/product/#28c97c6" class="navbar-item">
+                Ventory Mobile
+              </a>
+              <a href="https://ventory.io/product/#6222667" class="navbar-item">
+                Ventory Connect
+              </a>
+            </div>
+          </div>
+          <a href="https://app.ventory.io/pricing" class="navbar-item is-secondary">
+            Pricing
+          </a>
+          <a href="https://ventory.io/blog/" class="navbar-item is-secondary">
+            Blog
+          </a>
+          <a href="https://app.ventory.io/signin" class="navbar-item is-secondary">
+            Log in
+          </a>
+          <a href="/get-started" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              Get a free demo
+            </span>
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/logo-ventory.png" alt="" width="240" height="52">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Products
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://ventory.io/product/#93a3a3b" class="navbar-item">
+              Ventory Web
+            </a>
+            <a href="https://ventory.io/product/#28c97c6" class="navbar-item">
+              Ventory Mobile
+            </a>
+            <a href="https://ventory.io/product/#6222667" class="navbar-item">
+              Ventory Connect
+            </a>
+          </div>
+        </div>
+        <a href="https://app.ventory.io/pricing" class="navbar-item is-secondary">
+          Pricing
+        </a>
+        <a href="https://ventory.io/blog/" class="navbar-item is-secondary">
+          Blog
+        </a>
+        <a href="https://app.ventory.io/signin" class="navbar-item is-secondary">
+          Log in
+        </a>
+        <a href="/get-started" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            Get a free demo
+          </span>
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+
+
+<section class="section is-medium">
+  <div class="container">
+    
+
+    <div class="content">
+      <div id="overlay"></div>
+<div id="popup" class="popup">
+  <p>Enter your details and watch our great webinars on field inventory management!</p>
+  <div class="column">
+    <input id="firstName" class="input" type="text" placeholder="First name"/>
+  </div>
+  <div class="column">
+    <input id="lastName" class="input" type="text" placeholder="Last name"/>
+  </div>
+  <div class="column">
+    <input id="email" class="input" type="text" placeholder="Email"/>
+  </div>
+  <div class="column">
+    <input id="company" class="input" type="text" placeholder="Company name"/>
+  </div>
+  <div id="popup-form-errors" style="display: none;" class="column" >
+    <p>All fields are required.</p>
+  </div>
+  <div class="column">
+    <button id="submit-btn" onclick="submitForm()" class="button secondary-btn raised is-clear">Submit</button>
+  </div>
+</div>
+<style>
+
+#popup{
+    background-color: #ffffff;
+    width: 400px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+    z-index: 300
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+</style>
+<script type="text/javascript">
+
+    function openPopup() {
+        const overlay = document.getElementById('overlay');
+        const popup = document.getElementById('popup');
+
+        overlay.style.display = "block";
+        popup.style.display = "block";
+
+        setTimeout(listenForClose, 500);
+    }
+
+    function listenForClose() {
+      document.addEventListener('click', close);
+        
+    }
+
+    function close(event) {
+      const withinBoundaries = event.composedPath().includes(popup)
+
+      if (!withinBoundaries) {
+        overlay.style.display = "none";
+        popup.style.display = "none";
+        document.removeEventListener('click', close);
+      }
+    }
+
+    function submitForm() {
+        const firstNameField = document.getElementById('firstName');
+        const lastNameField = document.getElementById('lastName');
+        const emailField = document.getElementById('email');
+        const companyField = document.getElementById('company');
+
+        const firstName = firstNameField.value;
+        const lastName = lastNameField.value;
+        const email = emailField.value;
+        const company = companyField.value;
+        
+        if(!firstName || !lastName || !email || !company || !email.includes('@')) {
+            document.getElementById('popup-form-errors').style.display = 'block';
+        } else {
+            document.getElementById('popup-form-errors').style.display = 'none';
+            
+            firstNameField.disabled = true;
+            lastNameField.disabled = true;
+            emailField.disabled = true;
+            companyField.disabled = true;
+            document.getElementById('submit-btn').disabled = true;
+            const formData = {
+              fields: [
+                {
+                  objectTypeId: "0-1",
+                  name: "firstname",
+                  value: firstName
+                },
+                {
+                  objectTypeId: "0-1",
+                  name: "lastname",
+                  value: lastName
+                },
+                {
+                  objectTypeId: "0-1",
+                  name: "email",
+                  value: email
+                },
+                {
+                  objectTypeId: "0-1",
+                  name: "company",
+                  value: company
+                }
+              ]
+            };
+            fetch('https://api.hsforms.com/submissions/v3/integration/submit/25716919/82e8f85c-312e-4a20-877c-d4b16bbc33ca', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(formData)})
+                .then(resp => {
+                    console.log('Form submitted', resp);
+                    if(resp.status === 200) {
+                        window.location.href = '/blog/webinars/healthcare-medical-devices/';
+                    } else {
+                        alert('An error happened');
+                    }
+                })
+                .catch(error => {
+                    alert('An error happened');
+                });
+        }
+        return false;
+    }
+
+</script>
+<section class="section section-feature-grey is-medium" style="padding: 2rem 0">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Get Started!</h2>
+      <div class="divider is-centered"></div>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Discover our solution</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/mouse-globe.svg">
+            </div>
+            <div class="card-text">
+                <p>Register for our webinars or watch the previous editions.</p>
+            </div>
+            <div class="card-action">
+              <a onclick="openPopup(); return false;" href="?register=true" class="button btn-align-md accent-btn raised">Register for our webinars</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Book a demo</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/laptop-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>See what we can add to<br/>your business</p>
+            </div>
+            <div class="card-action">
+              <a href="https://calendly.com/vishal-punamiya/30min" class="button btn-align-md accent-btn raised" target="_blank">Book a demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Start your free trial today</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/plug-cloud.svg">
+            </div>
+            <div class="card-text">
+                <p>Try out Ventory for free during 30 days</p>
+            </div>
+            <div class="card-action">
+              <a href="https://app.ventory.io/signup" class="button btn-align-md accent-btn raised" target="_blank">Try out Ventory</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
